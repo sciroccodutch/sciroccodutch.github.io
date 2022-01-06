@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/* navbar */
+.navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+/* jumbotron */
+
+.jumbotron {
+    background-image: url(img/4.jpeg);
+    background-size: cover;
+    background-position: 0 -10px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 200px;
+    filter: brightness(130%);
+    
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    font-size: 40px;
+    
+}
+
+.jumbotron .display-6 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+
+.shrink .navbar {
+    color: #fafafa;
+    background: #00c6ff;
+    background: linear-gradient(35deg, #00c6ff 10%, #0072ff 90%);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    border-bottom: 1px solid #fff;
+  }
+
+  /* info panel */
+
+  .info-panel {
+     box-shadow: 0 3px 20px rgba(0,0,0,.5);
+     border-radius: 12px;
+     margin-top: -250px;
+     background-color: white;
+     z-index: 2;
+     padding: 50px;
+
+  }
+
+  .info-panel img {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .info-panel h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.info-panel h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+  .info-panel h4 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+
+  .info-panel p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.info-panel .tmb {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+table th {
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+table td {
+    text-align: center;
+}
+
+/* about */
+
+.about {
+    margin-top: -50px;
+    padding-top: 100px;
+    background-color: #0d6efd
+}
+
+.about h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.about .pabout {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+.about h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+
+
+.about h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.about p {
+    color: white;
+    font-size: 16px;
+    font-size: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+
+/* Eearning */
+
+.simulation {
+    box-shadow: 0 3px 20px rgba(0,0,0,.5);
+    border-radius: 12px;
+    background-color: white;
+}
+
+.simulation h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.simulation p {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* .contact h2, label {
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+} */
+
+.faq {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.transactiontips {
+    margin-top: 100px;
+}
+
+.transactiontips h5,
+.transactiontips ul li {
+    font-weight: 600;
+}
+
+section {
+    padding-top: 8rem;
+}
+
+.contact ul {
+    margin-bottom: 100px;
+}
+
+.contact ul li {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+  /* utility */
+
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* supaya iframe responsive */
+.container-iframe {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.container-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width: 992px) {
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin:auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -90px;
+        height: 800px;
+    }    
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+        margin-top: 200px;
+    }
+
+    .jumbotron .display-6 {
+        font-size: 50px;
+    }
+
+    .simulation h3 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .faq {
+        padding-top: 250px;
+        padding-bottom: 200px;
+    }
+
+   
+
+}
+
