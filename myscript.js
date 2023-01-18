@@ -93,12 +93,18 @@ $(document).ready(function () {
 
 //  aksi tombol hitung
   const paket = document.getElementById('paket');
+  const price = document.getElementById('ctnft_price');
 
       $('.tombolHitung').click(function() {
 
         let ver = true;
         if (paket.value == "") {
           alert('Pls kindly to choose the package!');
+          ver = false;
+        }
+
+        if (price.value == "") {
+          alert('Pls kindly to enter the ctnft price!');
           ver = false;
         }
 
@@ -138,10 +144,13 @@ function ordinal_suffix_of(i) {
 function hitungReward() {
   const paket = document.getElementById('paket').value;
   const periode = Array.from(document.querySelectorAll('.periode'));
+  const price = document.getElementById('ctnft_price').value;
+  
   let values = periode.map(a => Number(paket) * (Number(a.value) * 150) / 100)
   .reduce((x,y) => x + y);
 
   document.getElementById('reward').value = values + Number(paket);
+  document.getElementById('reward1').value = (values + Number(paket)) * Number(price);
 }
 
 
