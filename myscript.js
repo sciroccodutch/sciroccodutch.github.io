@@ -98,15 +98,18 @@ $(document).ready(function () {
       $('.tombolHitung').click(function() {
 
         let ver = true;
-        if (paket.value == "") {
-          alert('Pls kindly to choose the package!');
-          ver = false;
-        }
 
         if (price.value == "") {
           alert('Pls kindly to enter the ctnft price!');
           ver = false;
         }
+
+        if (paket.value == "") {
+          alert('Pls kindly to choose the package!');
+          ver = false;
+        }
+
+       
 
         elementArray.forEach(function(elem, i){
             if (elem.value == "") {
